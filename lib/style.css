@@ -28,8 +28,9 @@ section {
     box-sizing: border-box;
 }
 
-.card-illustration {
-    text-align: right;
+section + section {
+    padding-top: 7.5vh;
+    padding-bottom: 5vh;
 }
 
 @media all and (min-width: 750px) {
@@ -71,6 +72,15 @@ h2 {
 }
 
 p  { margin-bottom: .75rem; }
+
+.signature {
+    padding-top: .5rem;
+    text-align: center;
+}
+
+.signature.awjin {
+    padding-left: 50px;
+}
 
 img {
     max-width: 100%;
