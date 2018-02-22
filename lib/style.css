@@ -1,17 +1,18 @@
 html,
 body {
-    position: relative;
     box-sizing: border-box;
     width: 100%;
-    line-height: 1.5;
+    line-height: 1.15;
     font-family: 'Nanum Myeongjo';
-    font-size: 22px;
-    background: #f9fffb;
-    z-index: -2;
+    font-family: 'Nanum Pen Script';
+    font-size: 35px;
+    color: #111;
 }
 
 body {
-    padding: 7.5vh 5vw 10vh 5vw;
+    max-width: 1224px;
+    margin: auto;
+    padding: 10vh 5vw 5vh 5vw;
 }
 
 main {
@@ -33,11 +34,11 @@ section {
 
 @media all and (min-width: 750px) {
     .card-text {
-        flex-basis: 30%;
+        flex-basis: 35%;
     }
 
     .card-illustration {
-        flex-basis: calc(70% - 2rem);
+        flex-basis: calc(65% - 2rem);
     }
 }
 
@@ -47,23 +48,37 @@ p {
     margin-top: 0;
 }
 
-h1 { margin-bottom: 0; }
-h2 { margin-bottom: 1rem; }
-p  { margin-bottom: 1rem; }
-
 h1,
 h2 {
-    font-family: 'Nanum Pen Script';
-    font-weight: normal;
+    line-height: .95;
+    animation: wiggle 2s ease infinite;
 }
 
+@keyframes wiggle {
+    0%   {transform: translateY(-5px)}
+    50%  {transform: translateY(5px)}
+    100% {transform: translateY(-5px)}
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 200%;
+}
+
+h2 {
+    margin-bottom: 7.5vh;
+    font-size: 150%;
+}
+
+p  { margin-bottom: .75rem; }
+
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 #confetti{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
